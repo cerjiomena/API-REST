@@ -90,7 +90,7 @@ public class ArticuloRestController {
 	public ResponseEntity<Map<String, Object>> getObtenerCorreoYEnviarMail(
 			@ApiParam(value = "id_articulo", required = true, example = "P0001") @RequestParam(value = "id_articulo") String id,
 			@ApiParam(value = "descripcion", required = true, example = "Descripcion a actualizar") @RequestParam(value = "descripcion") String descripcion,
-			@ApiParam(value = "modelo", required = true, example = "Modelo a actualizar") @RequestParam(value = "descripcion") String modelo) {
+			@ApiParam(value = "modelo", required = true, example = "Modelo a actualizar") @RequestParam(value = "modelo") String modelo) {
 
 		Map<String, Object> response = new HashMap<>();
 		String mensaje = null;
